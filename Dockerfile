@@ -4,7 +4,7 @@ FROM fedora:latest
 ARG TARGETARCH
 
 # Windows build deps
-RUN dnf update
+RUN dnf update -y
 RUN dnf install ninja-build clang zip -y
 RUN dnf install -y git make cmake gcc g++
 
